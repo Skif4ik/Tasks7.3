@@ -1,4 +1,4 @@
-package tasks.tasks1;
+package tasks1;
 //1. Покупка товара
 //1.1. Создать класс ProductPurchase (name, price, number (количество купленного товара)).
 //1.2. Определить в классе ProductPurchase параметрический конструктор
@@ -14,9 +14,9 @@ package tasks.tasks1;
 //1.9. Вывести полную информацию об объектах и сумме покупки getGeneralCost().
 //1.10. Подчитать общую стоимость покупок без скидки и со скидками.
 
-import tasks.tasks1.model.DiscountProductPurchase;
-import tasks.tasks1.model.DiscountRedProductPurchase;
-import tasks.tasks1.model.ProductPurchase;
+import tasks1.model.DiscountProductPurchase;
+import tasks1.model.DiscountRedProductPurchase;
+import tasks1.model.ProductPurchase;
 
 public class Main1 {
     public static void main(String[] args) {

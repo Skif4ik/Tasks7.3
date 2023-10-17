@@ -1,4 +1,4 @@
-package tasks.tasks1.model;
+package tasks1.model;
 
 public class ProductPurchase {
     private String name;

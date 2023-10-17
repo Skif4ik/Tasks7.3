@@ -1,15 +1,17 @@
-package tasks.tasks1.model;
+package tasks1.model;
 
-public class DiscountRedProductPurchase extends ProductPurchase{
+public class DiscountProductPurchase extends ProductPurchase{
 
-    private static final double DISCOUNT = 0.50;
+    private static final double DISCOUNT = 0.10;
 
-    public DiscountRedProductPurchase() {
+    public DiscountProductPurchase() {
     }
 
-    public DiscountRedProductPurchase(String name, double price, int number) {
+    public DiscountProductPurchase(String name, double price, int number) {
         super(name, price, number);
     }
+
+
 
     @Override
     public double getGeneralCost() {   //сумма покупки с учетом скидки
@@ -19,7 +21,7 @@ public class DiscountRedProductPurchase extends ProductPurchase{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("DiscountRedProductPurchase{");
+        final StringBuilder sb = new StringBuilder("DiscountProductPurchase{");
         sb.append("generalCost=").append(getGeneralCost());
         sb.append(", name='").append(getName()).append('\'');
         sb.append(", price=").append(getPrice());
