@@ -1,4 +1,4 @@
-package task2.model;
+package tasks2.model;
 
 public class Administrator extends Employee {
     private static final double BONUS = 0.2;

@@ -1,9 +1,9 @@
-package task2;
+package tasks2;
 
-import task2.model.Administrator;
-import task2.model.Developer;
-import task2.model.Employee;
-import task2.model.Security;
+import tasks2.model.Administrator;
+import tasks2.model.Developer;
+import tasks2.model.Employee;
+import tasks2.model.Security;
 
 public class Main2 {
     public static void main(String[] args) {
