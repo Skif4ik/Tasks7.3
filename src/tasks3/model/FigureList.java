@@ -78,7 +78,7 @@ public class FigureList {
     }
 
     public void show() {// выводит массив
-        System.out.println("Figure List");
+        System.out.println("===== Figure List =====");
         for (int i = 0; i < currentIndex; i++) { // форич не используем, т.к. не знаем точное кол-во фигур
             System.out.println(figures[i]);
         }

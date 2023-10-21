@@ -30,12 +30,25 @@ public class Rectangle extends Figure {
 
     @Override
     public double getPerimeter() {
-        return ((sideA + sideB) * 2);
+        return ((sideA + sideB)*2);
     }
 
     @Override
     public double getSquare() {
         return (sideA * sideB);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + sideA;
+        result = 31 * result + sideB;
+        return result;
     }
 
     @Override

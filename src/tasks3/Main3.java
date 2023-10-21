@@ -39,7 +39,8 @@ public class Main3 {
         //второй и четвертый элементы массива считаются примерно  равными по площадям
         System.out.println(figures[1].equals(figures[3]));
         System.out.println(Figure.sumSquare(figures));
-        System.out.println("----------------------------");
+
+        System.out.println("==============================================");
 
 
         FigureList figureList = new FigureList();// создали новый объект
@@ -49,11 +50,11 @@ public class Main3 {
         figureList.show();
         System.out.println(figureList.sumSquare());// вызов метода
         figureList.allEquals(2);
-        figureList.delByIndex(5);
+//       figureList.delByIndex(5);
         System.out.println(figureList.getByIndex(0)); // увидеть объект по заданному индексу
-
-        figureList.getFigureWithMaxPerimeter();
-        figureList.getFigureWithMinPerimeter();
+//
+//        figureList.getFigureWithMaxPerimeter();
+//        figureList.getFigureWithMinPerimeter();
 
     }
 }

@@ -30,12 +30,23 @@ public class Circle extends Figure {
     }
 
     @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + radius;
+        return result;
+    }
+
+    @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Сircle{");
-        sb.append("radius=").append(radius);
-        sb.append(", perimeter=").append(getPerimeter());
-        sb.append(", square=").append(getSquare());
-        sb.append('}');
-        return sb.toString();
+        return "Circle{" +
+                "radius=" + radius +
+                ", perimeter=" + Math.round(getPerimeter()) +
+                ", square=" + Math.round(getSquare()) +
+                '}';
     }
 }
