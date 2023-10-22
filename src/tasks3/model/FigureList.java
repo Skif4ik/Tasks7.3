@@ -41,34 +41,57 @@ public class FigureList {
 
     public void delByIndex(int index) {// удаление по индексу
         if (isVaLidIndex(index)) { // проверка повторяется- поэтому сделали метод
-            System.arraycopy(figures, index + 1, figures, index, currentIndex);
+            System.arraycopy(figures, index + 1, figures, index, currentIndex - index);
             currentIndex--;
         }
     }
 
-    public Figure getFigureWithMaxPerimeter() {// что бы метод возвращал фигуру!!!!
+//    public Figure getFigureWithMaxPerimeter() {// что бы метод возвращал фигуру!!!!
+//        int indMax = 0;
+//        for (int i = 0; i < currentIndex - 1; i++) {
+//            if (figures[indMax].getPerimeter() < figures[i + 1].getPerimeter()) {
+//                indMax = i + 1;
+//            }
+//        }
+//        return figures[indMax];
+//    }
+
+    public void getFigureWithMaxPerimeter() {
         int indMax = 0;
         for (int i = 0; i < currentIndex - 1; i++) {
             if (figures[indMax].getPerimeter() < figures[i + 1].getPerimeter()) {
                 indMax = i + 1;
             }
         }
-        return figures[indMax];
+        System.out.println("Фигура с максимальным периметром: ");
+        System.out.println(figures[indMax]);
     }
 
     private boolean isVaLidIndex(int index) {
         return index >= 0 && index < currentIndex;
     }
 
-    public Figure getFigureWithMinPerimeter() {
+//    public Figure getFigureWithMinPerimeter() {
+//        int indMin = 0;
+//        for (int i = 0; i < currentIndex; i++) {
+//            if (figures[indMin].getPerimeter() > figures[i + 1].getPerimeter()) {
+//                indMin = i + 1;
+//            }
+//        }
+//        return figures[indMin];
+//    }
+
+    public void getFigureWithMinPerimeter() {
         int indMin = 0;
-        for (int i = 0; i < currentIndex; i++) {
+        for (int i = 0; i < currentIndex - 1; i++) {
             if (figures[indMin].getPerimeter() > figures[i + 1].getPerimeter()) {
                 indMin = i + 1;
             }
         }
-        return figures[indMin];
+        System.out.println("Фигура с минимальным периметром: ");
+        System.out.println(figures[indMin]);
     }
+
 
     public void allEquals(int index) {
         for (int i = 0; i < currentIndex; i++) {

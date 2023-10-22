@@ -50,11 +50,11 @@ public class Main3 {
         figureList.show();
         System.out.println(figureList.sumSquare());// вызов метода
         figureList.allEquals(2);
-//       figureList.delByIndex(5);
+       figureList.delByIndex(5);
         System.out.println(figureList.getByIndex(0)); // увидеть объект по заданному индексу
 //
-//        figureList.getFigureWithMaxPerimeter();
-//        figureList.getFigureWithMinPerimeter();
+       figureList.getFigureWithMaxPerimeter();
+        figureList.getFigureWithMinPerimeter();
 
     }
 }
